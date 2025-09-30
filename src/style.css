@@ -76,7 +76,7 @@ nav {
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    padding: 0.75em 1.25em;
+    padding: 0.625rem 1.25rem;
     border-radius: 25px;
     transition: all 0.5s ease;
 }
@@ -152,7 +152,7 @@ main {
 .btn-cards {
     display: inline-block;
     margin: 20px auto 0;
-    padding: 14px 24px;
+    padding: 10px 20px;
     background: #3498db;
     color: #fff;
     font-size: clamp(13px, 2vw, 14.6px);
@@ -361,7 +361,7 @@ main {
 
 .btn-contato {
     align-self: flex-start;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin-top: 10px;
 }
 
@@ -480,7 +480,7 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
     nav .nav-links {
-        display: block; /* Pode implementar menu hamburger */
+        display: none; /* Pode implementar menu hamburger */
     }
 
     .cards-destinos {
