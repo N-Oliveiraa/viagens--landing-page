@@ -50,7 +50,7 @@ O site possui um design responsivo, com banners, cards de destinos, seção de s
 - HTML5
 - CSS3
 - JavaScript 
-- Google Fonts (Poppins)
+
 
 ---
 
