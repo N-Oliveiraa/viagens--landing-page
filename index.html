@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>VillageTravel</title>
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav role="navigation" aria-label="Menu principal">
+            <a class="logo" href="/">Viagem pela vila</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destino">Destino</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="banner">
+                <img src="assets/imagens/imgbanner.jpg" alt="Vilarejos Europeus" class="banner-img" />
+                <div class="banner-text">
+                    <h2>Descubra Vilarejos <br /> Encantadores da Europa</h2>
+                    <p>Explore paisagens deslumbrantes, culturas ricas e experiências autênticas em vilarejos pitorescos pelo velho continente.</p>
+                    <button class="btn" onclick="document.getElementById('destino').scrollIntoView({behavior: 'smooth'});">Comece Sua Jornada</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="destino" class="destino-section">
+            <h2 class="section-title">Destinos</h2>
+            <div class="cards-destinos">
+                <article class="article-card card01">
+                    <img src="assets/imagens/imgcard1.jpg" alt="Vilarejo encantador na Europa com paisagens montanhosas" />
+                    <h3>Viagem para as Montanhas</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sunt placeat velit quia laudantium exercitationem voluptas deserunt. Possimus pariatur atque perferendis voluptate. Aliquam eaque dolorem perspiciatis dolorum eius, distinctio obcaecati!
+                    </p>
+                    <button class="btn-cards">Comprar</button>
+                </article>
+
+                <article class="article-card card02">
+                    <img src="assets/imagens/imgcard2.jpg" alt="Vilarejo costeiro europeu com mar e casas coloridas" />
+                    <h3>Viagem para a Costa</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique aliquid porro incidunt quos velit modi eveniet fugit optio fugiat corrupti recusandae aliquam voluptate necessitatibus, voluptatibus nobis quae reprehenderit mollitia veniam?
+                    </p>
+                    <button class="btn-cards">Comprar</button>
+                </article>
+
+                <article class="article-card card03">
+                    <img src="assets/imagens/imgcard3.jpg" alt="Vilarejo histórico na Europa com arquitetura antiga" />
+                    <h3>Viagem Histórica</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quibusdam veritatis illum, ratione ipsum aliquid mollitia fugit deleniti officiis, optio accusamus hic eaque porro tempora dicta! Earum ratione minus non.
+                    </p>
+                    <button class="btn-cards">Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos-section">
+            <div class="container-servicos container-font">
+                <h2>Nossos Serviços</h2>
+                <p class="intro-servicos">Oferecemos opções simples e personalizadas para sua viagem aos vilarejos europeus.</p>
+
+                <article class="servicos-article">
+                    <ul class="lista-servicos">
+                        <li><strong>Pacotes Personalizados:</strong> Roteiros sob medida com hospedagem e transporte.</li>
+                        <li><strong>Guias Locais:</strong> Acompanhamento em português para experiências culturais.</li>
+                        <li><strong>Reservas Seguras:</strong> Hotéis, voos e atividades com suporte 24h.</li>
+                        <li><strong>Consultoria Gratuita:</strong> Dicas iniciais para planejar sua aventura.</li>
+                    </ul>
+                    <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'});">Saiba Mais</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="contato-section">
+            <div class="container-contato container-font">
+                <h2>Entre em Contato</h2>
+                <p class="intro-contato">Envie uma mensagem rápida para começar a planejar sua viagem.</p>
+
+                <div class="contato-grid">
+                    <form class="form-contato" action="#contato">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome" maxlength="50" />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+
+                        <label for="telefone">Telefone (opcional):</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000" />
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required placeholder="Descreva sua viagem ideal..." rows="4" maxlength="300"></textarea>
+
+                        <button type="submit" class="btn-contato">Enviar</button>
+                    </form>
+
+                    <aside class="infos-contato" aria-label="Informações de contato">
+                        <h3>Nosso Contato</h3>
+                        <ul>
+                            <li><strong>Email:</strong> contato@Viagempelavila.com</li>
+                            <li><strong>Telefone:</strong> (00) 0000-0000</li>
+                            <li><strong>Endereço:</strong> Rua das Viagens, 000 - Verona, IT</li>
+                        </ul>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456789!2d-46.652123!3d-23.561234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMzJzM2LjQiUyA0NMKwMzknMDguNSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100" height="150" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Mapa do endereço"></iframe>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <p>&copy; 2025 Viagem pela vila. Todos os direitos reservados. | Viagens autênticas pela Europa.</p>
+            <ul class="footer-links">
+                <li><a href="#privacidade">Privacidade</a></li>
+                <li><a href="#termos">Termos</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+
+        <button id="back-to-top" class="btn-back-top" aria-label="Voltar ao topo da página">↑</button>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

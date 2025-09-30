@@ -1,0 +1,571 @@
+/* Reset e base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: "Poppins", system-ui, Arial, Helvetica, sans-serif;
+}
+
+input, 
+button, 
+textarea { 
+    font-family: inherit; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.7;
+    outline: 2px solid #3498db;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 3px;
+    color: #7579ad;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer; /* opcional, para indicar que é clicável */
+    transition: color 0.3s ease;
+}
+
+.logo:hover,
+.logo:focus {
+    color: #3498db; /* cor desejada ao passar o mouse */
+    outline: none; /* remove a borda de foco */
+    text-decoration: none; /* remove sublinhado se houver */
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    height: 90px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.nav-links li {
+    letter-spacing: 3px;
+}
+
+.nav-links a {
+    background: #3498db;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.75em 1.25em;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Main */
+main {
+    background: #fff;
+}
+
+/* Banner */
+#home {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    border-radius: 10px;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    max-width: 700px;
+    padding: 0 1rem;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 2;
+}
+
+.banner-text h2 {
+    font-size: clamp(32px, 5vw, 40.2px); /*tamanho do tittle do banner*/
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.banner-text p {
+    font-size: clamp(14px, 2.5vw, 16.8px);
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.btn,
+.btn-contato,
+.btn-cards {
+    display: inline-block;
+    margin: 20px auto 0;
+    padding: 14px 24px;
+    background: #3498db;
+    color: #fff;
+    font-size: clamp(13px, 2vw, 14.6px);
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-contato:hover,
+.btn-contato:focus,
+.btn-cards:hover,
+.btn-cards:focus {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção Destinos */
+#destino {
+    background: #f9f9f9;
+    padding: 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px;
+    margin-bottom: 2rem;
+}
+
+.cards-destinos {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 0 20px 0;
+    overflow-x: auto;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 280px;
+    min-width: 250px;
+    min-height: 450px;
+    max-height: 650px;
+    background-color: #fffefe;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.article-card h3 {
+    padding: 15px 20px 10px;
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.article-card p {
+    font-size: 12px;
+    padding: 0 20px 20px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: justify;
+    line-height: 1.4;
+    overflow: auto;
+}
+
+/* Seção Serviços */
+#servicos {
+    background: #ebe0e0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container-servicos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-servicos {
+    font-size: clamp(16px, 2.5vw, 18px);
+    color: #667;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.servicos-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 2rem 0;
+}
+
+.lista-servicos {
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    width: 100%;
+}
+
+.lista-servicos li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #666;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.lista-servicos li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Seção Contato */
+#contato {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container-contato {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-contato {
+    font-size: clamp(16px, 2.5vw, 18px);
+    color: #555;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-contato label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.btn-contato {
+    align-self: flex-start;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+/* Aside contato */
+.infos-contato {
+    background: #ebe0e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.infos-contato h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.infos-contato ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.infos-contato li {
+    margin-bottom: 0.5rem;
+    color: #666;
+    line-height: 1.4;
+    padding-left: 1rem;
+    position: relative;
+    font-size: 14px;
+}
+
+.infos-contato li:before {
+    content: "📧";
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+}
+
+.infos-contato .mapa {
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #7579ad;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    opacity: 0.7;
+}
+
+/* Botão Voltar ao Topo */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+    background: #2980b9;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: block; /* Pode implementar menu hamburger */
+    }
+
+    .cards-destinos {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .article-card {
+        max-width: 250px;
+        min-width: 200px;
+        min-height: 400px;
+    }
+
+    .article-card img {
+        height: 40%;
+    }
+
+    .article-card h3 {
+        font-size: 18px;
+        padding: 10px 15px 8px;
+    }
+
+    .article-card p {
+        font-size: 11px;
+        padding: 0 15px 15px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .contato-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .lista-servicos {
+        text-align: center;
+    }
+
+    .lista-servicos li {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 0.75rem;
+    }
+
+    .infos-contato {
+        border-left: none;
+        border-top: 4px solid #3498db;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-destinos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .article-card {
+        flex: 0 1 100%;
+        max-width: 300px;
+        min-width: auto;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+}
+
+
+
+
+
