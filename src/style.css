@@ -203,7 +203,7 @@ main {
 .cards-destinos {
     display: flex;
     flex-wrap: nowrap;
-    gap: 15px;
+    gap: 35px;
     justify-content: center;
     padding: 0 0 20px 0;
     overflow-x: auto;
@@ -214,8 +214,9 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    max-width: 590px;
-    min-width: 250px;
+    max-width: 480px;
+    min-width: 280px;
+
     background-color: #fffefe;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -503,9 +504,10 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-
+    .logo {
+        font-size: 28px;
+    }
     /* Mostra o hamburger (se existir) */
-    
     .hamburger {
         display: flex;
         cursor: pointer;
@@ -617,6 +619,10 @@ footer {
         margin-right: 1rem;
     }
 
+    .logo {
+        font-size: 18px;
+    }
+
     .home-section {
         padding-block: 25px;
  
@@ -654,8 +660,8 @@ footer {
 
     .article-card {
         flex: 0 1 100%;
-        max-width: 390px;
-        min-width: auto;
+        max-width: 290px;
+        max-height: 350px;
     }
 
     section {
@@ -667,13 +673,11 @@ footer {
         margin-top: 0;
     }
 
-    #destino {
-
-    }
     .destino h2 {
         margin-top: 0;
     }
     .logo:hover {
         margin-left: 20px;
     }
+
 }
