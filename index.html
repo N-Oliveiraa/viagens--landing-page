@@ -14,7 +14,15 @@
     <header>
         <nav role="navigation" aria-label="Menu principal">
             <a class="logo" href="/">Viagem pela vila</a>
-            <ul class="nav-links">
+
+                    <!-- Botão Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destino">Destino</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -38,7 +46,7 @@
         <section id="destino" class="destino-section">
             <h2 class="section-title">Destinos</h2>
             <div class="cards-destinos">
-                <article class="article-card card01">
+                <article class="article-card">
                     <img src="assets/imagens/imgcard1.jpg" alt="Vilarejo encantador na Europa com paisagens montanhosas" />
                     <h3>Viagem para as Montanhas</h3>
                     <p>
@@ -47,7 +55,7 @@
                     <button class="btn-cards">Comprar</button>
                 </article>
 
-                <article class="article-card card02">
+                <article class="article-card">
                     <img src="assets/imagens/imgcard2.jpg" alt="Vilarejo costeiro europeu com mar e casas coloridas" />
                     <h3>Viagem para a Costa</h3>
                     <p>
@@ -56,7 +64,7 @@
                     <button class="btn-cards">Comprar</button>
                 </article>
 
-                <article class="article-card card03">
+                <article class="article-card">
                     <img src="assets/imagens/imgcard3.jpg" alt="Vilarejo histórico na Europa com arquitetura antiga" />
                     <h3>Viagem Histórica</h3>
                     <p>
@@ -79,7 +87,7 @@
                         <li><strong>Reservas Seguras:</strong> Hotéis, voos e atividades com suporte 24h.</li>
                         <li><strong>Consultoria Gratuita:</strong> Dicas iniciais para planejar sua aventura.</li>
                     </ul>
-                    <button class="btn" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'});">Saiba Mais</button>
+                    <button class="btn">Saiba Mais</button>
                 </article>
             </div>
         </section>
@@ -134,7 +142,7 @@
         </div>
     </footer>
 
-        <button id="back-to-top" class="btn-back-top" aria-label="Voltar ao topo da página">↑</button>
+        <button id="back-to-top" class="btn-back-top" aria-label="Voltar ao topo da página"><span>↑</span></button>
 
     <script src="src/script.js"></script>
 </body>
